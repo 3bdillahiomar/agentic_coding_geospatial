@@ -1,8 +1,10 @@
 # Agentic Coding for Geospatial
 
-A Python-based geospatial analysis project for exploring spatial data workflows, automation, visualization, and GeoAI-assisted development.
+A Python-based geospatial project for exploring spatial data workflows, automation, visualization, machine learning, and GeoAI-assisted development.
 
-The repository currently includes examples for London crime analysis, theft hotspot detection, spatial statistics, and geospatial visualization.
+The repository includes examples for London crime analysis, theft hotspot detection, spatial statistics, raster and vector workflows, and geospatial visualization.
+
+![Project cover](figures/git_cover.png)
 
 ## Project Structure
 
@@ -13,6 +15,8 @@ agentic_coding_geospatial/
 │   ├── london_crime_2024/
 │   └── route_optimization/
 ├── documents/
+├── figures/
+│   └── git_cover.png
 ├── output/
 ├── scripts/
 │   ├── eda_london_crime_2024.py
@@ -34,7 +38,7 @@ The project primarily uses Python and the geospatial Python ecosystem.
 * GeoPandas — vector geospatial analysis
 * Shapely — geometry operations
 * Xarray / Rioxarray — raster and multidimensional spatial data
-* Matplotlib — visualization
+* Matplotlib — plotting and visualization
 * Scikit-learn — machine learning
 * GeoAI — deep learning and geospatial AI
 * Streamlit — interactive data applications
@@ -44,7 +48,7 @@ The project primarily uses Python and the geospatial Python ecosystem.
 
 Use a Conda environment rather than installing packages into the base environment.
 
-Create an environment:
+Create the environment:
 
 ```bash
 conda create -n claude_code_geoai python=3.12
@@ -56,13 +60,13 @@ Activate it:
 conda activate claude_code_geoai
 ```
 
-Install the packages required by the scripts you intend to run.
-
-Example:
+Install the main packages:
 
 ```bash
 conda install pandas geopandas matplotlib scikit-learn
 ```
+
+Install additional geospatial packages as required by individual workflows.
 
 ## Running the Project
 
@@ -72,7 +76,7 @@ Clone the repository:
 git clone https://github.com/3bdillahiomar/agentic_coding_geospatial.git
 ```
 
-Enter the project:
+Move into the project directory:
 
 ```bash
 cd agentic_coding_geospatial
@@ -92,14 +96,14 @@ python scripts/eda_london_crime_2024.py
 
 ## London Crime Analysis
 
-The London crime workflow includes scripts for:
+The London crime workflow includes:
 
 * Exploratory data analysis
 * Filtering theft-related crimes
 * Kernel density estimation
 * Theft hotspot extraction
 * Spatial hotspot statistics
-* Visualization of crime patterns
+* Geospatial visualization
 
 Example workflow:
 
@@ -127,7 +131,7 @@ Generated analysis files are stored under:
 output/
 ```
 
-Examples may include:
+Outputs may include:
 
 * PNG maps and charts
 * GeoJSON files
@@ -139,7 +143,12 @@ Generated outputs may be excluded from Git depending on the `.gitignore` configu
 
 ## Claude Code
 
-The repository includes a `CLAUDE.md` file containing project-specific coding preferences, geospatial library preferences, environment rules, and development conventions for Claude Code.
+The repository includes a `CLAUDE.md` file containing project-specific instructions for Claude Code, including:
+
+* Preferred geospatial libraries
+* Conda environment rules
+* Coding preferences
+* Development conventions
 
 Start Claude Code from the project root:
 
@@ -147,7 +156,7 @@ Start Claude Code from the project root:
 claude
 ```
 
-For complex tasks, a useful workflow is:
+For complex tasks, use the following workflow:
 
 ```text
 Inspect → Plan → Implement → Test → Verify
@@ -155,7 +164,7 @@ Inspect → Plan → Implement → Test → Verify
 
 ## Git Workflow
 
-Check changes:
+Check the current repository status:
 
 ```bash
 git status
