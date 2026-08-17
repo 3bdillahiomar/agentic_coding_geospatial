@@ -1,4 +1,3 @@
-````markdown
 # Agentic Coding for Geospatial
 
 A Python-based geospatial analysis project for exploring spatial data workflows, automation, visualization, and GeoAI-assisted development.
@@ -25,7 +24,7 @@ agentic_coding_geospatial/
 ├── .gitignore
 ├── CLAUDE.md
 └── README.md
-````
+```
 
 ## Main Technologies
 
@@ -95,12 +94,12 @@ python scripts/eda_london_crime_2024.py
 
 The London crime workflow includes scripts for:
 
-* exploratory data analysis
-* filtering theft-related crimes
-* kernel density estimation
-* theft hotspot extraction
-* spatial hotspot statistics
-* visualization of crime patterns
+* Exploratory data analysis
+* Filtering theft-related crimes
+* Kernel density estimation
+* Theft hotspot extraction
+* Spatial hotspot statistics
+* Visualization of crime patterns
 
 Example workflow:
 
@@ -132,21 +131,15 @@ Examples may include:
 
 * PNG maps and charts
 * GeoJSON files
-* hotspot polygons
-* summary statistics
-* processed spatial datasets
+* Hotspot polygons
+* Summary statistics
+* Processed spatial datasets
 
 Generated outputs may be excluded from Git depending on the `.gitignore` configuration.
 
 ## Claude Code
 
-The repository includes:
-
-```text
-CLAUDE.md
-```
-
-This file defines project-specific coding preferences, geospatial libraries, environment rules, and development conventions for Claude Code.
+The repository includes a `CLAUDE.md` file containing project-specific coding preferences, geospatial library preferences, environment rules, and development conventions for Claude Code.
 
 Start Claude Code from the project root:
 
@@ -174,13 +167,13 @@ Stage changes:
 git add .
 ```
 
-Commit:
+Commit changes:
 
 ```bash
 git commit -m "Describe the changes"
 ```
 
-Push to GitHub:
+Push changes to GitHub:
 
 ```bash
 git push
@@ -192,7 +185,4 @@ GitHub:
 
 ```text
 https://github.com/3bdillahiomar/agentic_coding_geospatial
-```
-
-```
 ```
